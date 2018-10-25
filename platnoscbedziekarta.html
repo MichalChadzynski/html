@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> kalkulator </title>
+	</head>
+	
+	<body>
+		<form oninput=parseInt(a.value) *>
+		<table height="300px" align="center" bgcolor="ffffcc" width="350px" border="0">
+			<th align="center"> Invoice </th>
+			
+			<tr height="50px">
+				<td width="50%">
+					Number of hours
+				</td>
+				
+				<td>
+					<input
+						type="number"
+						value="25"
+						min="0"
+						max="100"
+						step="1"
+						size="50">
+				</td>	
+			</tr>
+			
+			<tr height="50px">
+				<td width="50%">
+				rate
+				</td>
+				
+				<td>
+					<input
+						type="number"
+						value="150"
+						min="0"
+						step="1"
+						max="300"
+						size="50">
+						(zł)
+				</td>	
+			</tr>
+			
+			<tr height="50px" >
+				<td width="50%">
+				VAT
+				</td>
+				
+				<td>
+					<input
+						type="number"
+						value="1"
+						min="0"
+						step="0.1"
+						max="1"
+						size="50">
+				</td>	
+			</tr>
+			
+			
+			<tr>
+				<td>
+					Total
+				</td>
+				
+				<td>
+					<output name="wynik"></output>
+				</td>
+			</tr>	
+		</table>
