@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		.margines {
+				padding: 50px;
+			}
+			.container {
+				display:grid;
+				grid-template-columns: repeat(4, 60px);
+				grid-template-rows: repeat(6, 60px);
+				grid-column-gap: 1px;
+				grid-row-gap: 1px;
+				font-size:25px;
+				font-family: 'Roboto', sans-serif;
+			}
+			 .button {
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 15px 25px;
+				text-align: center;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			input {
+				border: 1px solid white;
+				background-color: black;
+				width: 100%;
+				height: 100%;
+				font-size:25px;
+				font-family: 'Roboto', sans-serif;
+				color:white;
+				
+			}
+			.button:hover {
+			background-color: green;
+		}
+			.large {
+				grid-column-start: 3;
+				grid-column-end: 5;
+			}
+			.large2 {
+				grid-column-start: 1;
+				grid-column-end: 5;
+			}
+			.row {
+				outline: 1px solid black;
+			}
+		</style>
+	</head>
+	
+	<body>
+	 <div id='calc-contain'>
+	<form name="calculator">
+		  
+		  
+		<div class="container">
+			<div class="row large2">  <input type="text" name="answer" size="20" />  </div>
+			<div class="row"> <input type="button" value=" c " onclick="calculator.answer.value = ''" /></div>
+			<div class="row"> <input type="button" value=" / " onclick="calculator.answer.value += '/'" /></div>
+			<div class="row"> <input type="button" value=" x " onclick="calculator.answer.value += '*'" /></div>
+			<div class="row "> <input type="button" value=" - " onclick="calculator.answer.value += '-'" /></div>
+			<div class="row"> <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" /></div>
+			<div class="row"><input type="button" value=" 8 " onclick="calculator.answer.value += '8'" /></div>
+			<div class="row"><input type="button" value=" 9 " onclick="calculator.answer.value += '9'" /></div>
+			<div class="row"> <input type="button" value=" + " onclick="calculator.answer.value += '+'" /></div>
+			<div class="row"> <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" /></div>
+			<div class="row"><input type="button" value=" 5 " onclick="calculator.answer.value += '5'" /></div>
+			<div class="row"><input type="button" value=" 6 " onclick="calculator.answer.value += '6'" /></div>
+			<div class="row"> <input type="button" value=" . " onclick="calculator.answer.value += '.'" /></div>
+			<div class="row"> <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" /></div>
+			<div class="row"> <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" /></div>
+			<div class="row"><input type="button" value=" 3 " onclick="calculator.answer.value += '3'" /></div>
+			<div class="row"><input type="button" value=" <3 " onclick="calculator.answer.value += '^'" /></div>
+			<div class="row"> <input type="button" value=" % " onclick="calculator.answer.value += '%'" /></div>
+			<div class="row"><input type="button" value=" 0 " onclick="calculator.answer.value += '0'" /></div>
+			<div class="row large"> <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" /></div>
+			
+		</div>
+	</form>
+	</div>
+	</body>
+</html>
