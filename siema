@@ -1,0 +1,29 @@
+create table ksiazka
+(id_os int auto_increment primary key not null,
+tytul varchar(20) not null,
+cena decimal not null,
+wydawnictwo varchar(30),
+miasto varchar(30),
+jezyk varchar(30),
+autor varchar(30));
+
+insert into ksiazka
+values(null, "potop", "15", "nk", "Poznan", "Polski", "Sienkiewicz"),
+(null, "trylogia", "20", "nk", "Poznan", "Polski", "Sienkiewicz"),
+(null, "chlopi", "10", "nk", "Poznan", "Polski", "Sienkiewicz"),
+(null, "harry pothed", "40", "hewrah", "Warszawa", "Francuski", "Hewra"),
+(null, "telefony", "40", "mobbyn", "Gdynia", "Angielski", "uhqqow"),
+(null, "serengeti", "40", "hewrah", "Warszawa", "Francuski", "Hewra"),
+(null, "wagabunda", "50", "grr", "Gdansk", "Francuski", "Hewra"),
+(null, "delphin", "30", "lilpoldon", "Wroclaw", "Włoski", "Don Poldon"),
+(null, "rybka", "50", "lilpoldon", "Wroclaw", "Włoski", "Don Poldon"),
+(null, "familia", "40", "hewrah", "Warszawa", "Francuski", "Hewra"),
+(null, "the no face", "35", "lilpoldon", "Wroclaw", "Włoski", "Don Poldon"),
+(null, "salony", "50", "lilpoldon", "Wroclaw", "Włoski", "Don Poldon"),
+(null, "ghetto flex", "15", "stopro", "Szczecin", "Niemiecki", "Kabe"),
+(null, "kreatorzy", "25", "stopro", "Szczecin", "Niemiecki", "Kabe"),
+(null, "charon", "15", "hnn", "Elblag", "Angielski", "Pikers");
+
+
+select * from ksiazka
+where miasto like "%W%" ;
