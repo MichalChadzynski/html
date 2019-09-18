@@ -27,3 +27,7 @@ values(null, "potop", "15", "nk", "Poznan", "Polski", "Sienkiewicz"),
 
 select * from ksiazka
 where miasto like "%W%" ;
+
+
+select * from ksiazka
+where miasto IN("Warszawa") ;
