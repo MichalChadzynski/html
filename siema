@@ -31,3 +31,19 @@ where miasto like "%W%" ;
 
 select * from ksiazka
 where miasto IN("Warszawa") ;
+
+
+
+insert into osoba
+values(null, "Michal", "Kowalski", "Sloneczna", "Opole", 4500, "1993-09-03"),
+(null, "Maciej", "Kowal", "Legnicka", "Siechnice", 3500, "2003-09-03"),
+(null, "Bartosz", "Kolodziejczyk", "Rozana", "Iwiny", 4000, "1996-09-03"),
+(null, "Adam", "Malysz", "Sudecka", "Radomierzyce", 1900, "1987-09-03"),
+(null, "Maciej", "Kot", "Aroniowa", "Wroclaw", 2900, "1999-09-03"),
+(null, "Kamil", "Stoch", "Traugutta", "Wroclaw", 2500, "1998-09-03"),
+(null, "Kamil", "Grosicki", "Pawia", "Wroclaw", 6000, "2002-09-03"),
+(null, "Piotr", "Stefaniak", "Zachodnia", "Wroclaw", 5800, "2001-03-03"),
+(null, "Hubert", "Glik", "Poranna", "Wroclaw", 3200, "1991-09-09"),
+(null, "Wojciech", "Szczesny", "Wisniowa", "Katowice", 6200, "2001-05-19"),
+(null, "Pawel", "Grabara", "Kalinowa", "Wroclaw", 1900, "2001-11-11");
+
